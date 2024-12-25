@@ -1,0 +1,47 @@
+definitions:
+  entity.SentMessage:
+    properties:
+      message_id:
+        type: string
+      sent_time:
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /sent:
+    get:
+      description: Retrieve a list of messages that have been sent
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/entity.SentMessage'
+            type: array
+      summary: Get sent messages
+      tags:
+      - Messages
+  /start:
+    post:
+      description: Start the background process to send unsent messages every 2 minutes
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Start sending messages
+      tags:
+      - Messages
+  /stop:
+    post:
+      description: Stop the background process of sending messages
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Stop sending messages
+      tags:
+      - Messages
+swagger: "2.0"

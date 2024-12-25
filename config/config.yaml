@@ -1,0 +1,15 @@
+mysql:
+  host: "localhost"
+  port: 3306
+  user: "root"
+  password: "Insider1GizliSifre*"
+  dbname: "insider_db"
+
+redis:
+  host: "localhost"
+  port: 6379
+
+message:
+  api_url: "https://webhook.site/a32967c9-4f9b-483b-9581-e8c860998d15"
+  header_key: "x-ins-auth-key"
+  header_value: "INS.me1x9uMcyYGlhKKQVPoc.bO3j9aZwRTOcA2Ywo"
