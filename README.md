@@ -49,16 +49,12 @@ CREATE TABLE messages (
 );
 -- Some Sample data
 INSERT INTO messages (content, `to`, status) VALUES
-('Mutlu yillara Insider ailesi 1', '+905426460000', 'unsent'),
-('Mutlu yillara Insider ailesi 2', '+905426460001', 'unsent'),
-('Mutlu yillara Insider ailesi 3', '+905426460002', 'unsent');
+('Mutlu yillar 1', '+905426460000', 'unsent'),
+('Mutlu yillar 2', '+905426460001', 'unsent'),
+('Mutlu yillar 3', '+905426460002', 'unsent');
  ```
 
 ### Some Working Environment Screen Shots During the Coding and Testing
-- **DB Side**
-  
-![db screenshot](https://github.com/user-attachments/assets/d44ab9ea-5b9b-493f-b7fe-9f79fab1bba6)
-
 - **Docker Side**
 
 ![docker images](https://github.com/user-attachments/assets/c05fd2d9-373f-4a73-b075-a21831958d95)
